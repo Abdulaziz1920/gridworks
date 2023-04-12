@@ -1,0 +1,171 @@
+body {
+  font-family: "Poppins";
+}
+
+header {
+  background-color: rgb(249, 251, 253);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.aside_card {
+  width: 90%;
+  padding: 30px 0;
+  margin: 10px 0;
+  background-color: rgb(249, 251, 253);
+  display: flex;
+  transition: 0.2s ease-in;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.aside_menus {
+  position: absolute;
+  left: 0;
+  position: fixed;
+  overflow-y: scroll;
+  height: 100%;
+  background-color: white;
+  width: 17.7rem;
+}
+
+.main {
+  position: relative;
+  top: 85px;
+  padding-left: 303px;
+  overflow-x: hidden;
+}
+
+.aside_box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 10px;
+}
+
+.aside_card h3 {
+  font-size: 15px;
+}
+
+.logo__title {
+  font-size: 1.56rem;
+  color: white;
+  font-weight: 800;
+}
+
+.login i {
+  font-size: 28px;
+  color: white;
+}
+
+.aside_card i {
+  font-size: 20px;
+}
+
+.login {
+  background-color: rgb(49, 95, 233);
+  padding: 1.25rem 3.125rem;
+}
+
+.icon img {
+  border-radius: 50%;
+}
+
+span {
+  color: brown;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.icon i {
+  font-size: 20px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+.icon i:hover {
+  color: rgb(49, 95, 233);
+}
+
+.aside_card i {
+  color: black;
+  transition: 0.2s ease-in;
+}
+
+.aside_card i {
+  font-size: 25px;
+}
+
+.aside_card {
+  cursor: pointer;
+}
+
+.ps {
+  display: none;
+}
+
+.aside_card h3 {
+  transition: 0.2s ease-in;
+}
+
+.aside_card:hover {
+  background-color: #daeaed5e;
+  color: rgb(49, 95, 233);
+}
+
+.aside_card:hover i {
+  color: rgb(49, 95, 233);
+}
+
+.content_img {
+  background-image: url(../image/pic-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.content_img h1 {
+  font-size: 20px;
+  color: white;
+  padding: 30px 0 80px 10px;
+}
+
+@media (max-width: 992px) {
+  .aside_menus {
+    display: none;
+  }
+  .ps {
+    display: block;
+    position: absolute;
+    left: 0;
+    position: fixed;
+    overflow: hidden;
+    height: 20%;
+    background-color: white;
+    width: 100%;
+  }
+  .aside_card {
+    background-color: transparent;
+  }
+  .aside_card:hover {
+    background-color: transparent;
+  }
+  .aside_box {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .main {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .top {
+    padding-top: 132px;
+  }
+}
